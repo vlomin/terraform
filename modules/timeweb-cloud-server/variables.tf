@@ -54,9 +54,9 @@ variable "software" {
   })
 
   default = {
-    name       = "Wireguard-GUI"
-    os_family  = "linux"
-    os_name    = "ubuntu"
+    name = "Wireguard-GUI"
+    os_family = "linux"
+    os_name = "ubuntu"
     os_version = "22.04"
   }
 }
