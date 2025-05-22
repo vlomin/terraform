@@ -8,7 +8,7 @@ To use one of the modules in your project, you can include it in your Terraform 
 
 ```hcl
 module "app_configuration" {
-  source = "git::https://github.com/vlomina/terraform-modules.git//module_name?ref=branch_name"
+  source = "git::https://github.com/vlomina/terraform.git//modules/module_name?ref=branch_name"
 
   # Pass in the required variables for the module
   variable_name1 = "value1"
@@ -25,7 +25,7 @@ Here's an example of how to use the `gitlab-project` module in your project:
 
     ```hcl
     module "my_gitlab_repo" {
-      source = "git::https://github.com/vlomina/terraform-modules.git//gitlab-project?ref=main"
+      source = "git::https://github.com/vlomina/terraform.git//modules/gitlab-project?ref=master"
 
       var_1         = "my_app"
       environment   = "production"
